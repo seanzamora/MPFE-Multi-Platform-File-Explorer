@@ -1,0 +1,107 @@
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" d:DesignWidth="800"
+    d:DesignHeight="450" x:Class="File_Explorer.MainWindow" Title="File_Explorer" TransparencyLevelHint="AcrylicBlur"
+    Background="Transparent" ExtendClientAreaToDecorationsHint="True" ExtendClientAreaChromeHints="NoChrome" 
+    ExtendClientAreaTitleBarHeightHint="-1">
+    <!-- ExtendClientAreaToDecorationsHint="False" -->
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Panel Grid.Column="0" Grid.Row="0">
+
+            <ExperimentalAcrylicBorder IsHitTestVisible="False">
+                <ExperimentalAcrylicBorder.Material>
+                    <ExperimentalAcrylicMaterial BackgroundSource="Digger" TintColor="White" TintOpacity="1"
+                        MaterialOpacity="0.45" />
+                </ExperimentalAcrylicBorder.Material>
+            </ExperimentalAcrylicBorder>
+
+            <Label Content="Files" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15 10 10 10" />
+
+        </Panel>
+
+        <Panel Grid.Column="1" Grid.Row="0">
+
+            <ExperimentalAcrylicBorder IsHitTestVisible="False">
+                <ExperimentalAcrylicBorder.Material>
+                    <ExperimentalAcrylicMaterial BackgroundSource="Digger" TintColor="White" TintOpacity="1"
+                        MaterialOpacity="0.45" />
+                </ExperimentalAcrylicBorder.Material>
+            </ExperimentalAcrylicBorder>
+
+            <Canvas>
+                <WrapPanel Canvas.Bottom="0" Orientation="Horizontal" VerticalAlignment="Bottom">
+                    <Border Background="#F8F7FB" BorderThickness="0" CornerRadius="5 5 0 0" Margin="10 0 0 0"
+                        Padding="15 10 20 10">
+                        <Label Content="Home Projects Projects Projects Projects Projects" MaxWidth="180" />
+                    </Border>
+                    <Border BorderThickness="0" CornerRadius="5 5 0 0" Margin="10 0 0 0" Padding="15 10 20 10">
+                        <Label Content="Projects" MaxWidth="180" />
+                    </Border>
+                    <Border BorderThickness="0" CornerRadius="5 5 0 0" Margin="10 0 0 0" Padding="15 10 20 10">
+                        <Label Content="Projects" MaxWidth="180" />
+                    </Border>
+                    <Border BorderThickness="0" CornerRadius="5 5 0 0" Margin="10 0 0 0" Padding="15 10 20 10">
+                        <Label Content="Projects" MaxWidth="180" />
+                    </Border>
+                </WrapPanel>
+            </Canvas>
+
+        </Panel>
+
+        <Panel Grid.Column="0" Grid.Row="1">
+
+            <ExperimentalAcrylicBorder IsHitTestVisible="False">
+                <ExperimentalAcrylicBorder.Material>
+                    <ExperimentalAcrylicMaterial BackgroundSource="Digger" TintColor="White" TintOpacity="1"
+                        MaterialOpacity="0.45" />
+                </ExperimentalAcrylicBorder.Material>
+            </ExperimentalAcrylicBorder>
+
+        </Panel>
+
+        <Panel Grid.Column="1" Grid.Row="1" Background="White">
+
+            <StackPanel>
+
+                <Grid Background="#F8F7FB">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <WrapPanel Margin="10 10 0 10" Grid.Column="0" Grid.Row="0">
+                        <Button Background="#F8F7FB" Content="1" Padding="15 10 15 10" Margin="0 0 10 0" />
+                        <Button Background="#F8F7FB" Content="2" Padding="15 10 15 10"  Margin="0 0 10 0" />
+                        <Button Background="#F8F7FB" Content="3" Padding="15 10 15 10" Margin="0" />
+                    </WrapPanel>
+
+                    <TextBox Background="White" Grid.Column="1" Grid.Row="0" BorderThickness="0" Padding="10" Margin="10"/>
+                    <TextBox Background="White" Grid.Column="2" Grid.Row="0" BorderThickness="0"  Padding="10" Margin="10"/>
+
+                </Grid>
+
+            </StackPanel>
+
+        </Panel>
+
+    </Grid>
+
+</Window>
